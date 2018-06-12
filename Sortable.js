@@ -1544,7 +1544,7 @@
     this._onDrop();
 
     this.el = el = null;
-  },
+  }
   Ghost: function () {
     if (!ghostEl) {
       var rect = dragEl.getBoundingClientRect(),
