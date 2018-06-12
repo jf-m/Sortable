@@ -805,7 +805,8 @@
 
           if (_onMove(rootEl, el, dragEl, dragRect, target, targetRect, evt) !== false) {
             if (!dragEl.contains(el)) {
-              el.appendChild(dragEl);
+              if (!this.options.fallbackOnBody)
+                el.appendChild(dragEl);
               parentEl = el; // actualization
             }
 
